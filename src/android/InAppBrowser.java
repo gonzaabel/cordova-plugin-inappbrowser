@@ -714,13 +714,14 @@ public class InAppBrowser extends CordovaPlugin {
                 main.setOrientation(LinearLayout.VERTICAL);
 
                 // Toolbar layout
+                /*
                 RelativeLayout toolbar = new RelativeLayout(cordova.getActivity());
                 //Please, no more black!
                 toolbar.setBackgroundColor(toolbarColor);
                 toolbar.setLayoutParams(new RelativeLayout.LayoutParams(LayoutParams.MATCH_PARENT, this.dpToPixels(44)));
                 toolbar.setPadding(this.dpToPixels(2), this.dpToPixels(2), this.dpToPixels(2), this.dpToPixels(2));
                 toolbar.setHorizontalGravity(Gravity.LEFT);
-                toolbar.setVerticalGravity(Gravity.TOP);
+                toolbar.setVerticalGravity(Gravity.TOP);*/
 
                 // Action Button Container layout
                 RelativeLayout actionButtonContainer = new RelativeLayout(cordova.getActivity());
@@ -807,8 +808,9 @@ public class InAppBrowser extends CordovaPlugin {
 
 
                 // Header Close/Done button
+                /*
                 View close = createCloseButton(5);
-                toolbar.addView(close);
+                toolbar.addView(close);*/
 
                 // Footer
                 RelativeLayout footer = new RelativeLayout(cordova.getActivity());
@@ -932,6 +934,7 @@ public class InAppBrowser extends CordovaPlugin {
                 actionButtonContainer.addView(forward);
 
                 // Add the views to our toolbar if they haven't been disabled
+                /*
                 if (!hideNavigationButtons) toolbar.addView(actionButtonContainer);
                 if (!hideUrlBar) toolbar.addView(edittext);
 
@@ -939,7 +942,7 @@ public class InAppBrowser extends CordovaPlugin {
                 if (getShowLocationBar()) {
                     // Add our toolbar to our main view/layout
                     main.addView(toolbar);
-                }
+                }*/
 
                 // Add our webview to our main view/layout
                 RelativeLayout webViewLayout = new RelativeLayout(cordova.getActivity());
